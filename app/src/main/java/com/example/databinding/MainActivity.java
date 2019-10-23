@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import com.example.databinding.databinding.ActivityMainBinding;
+import com.example.databinding.handlers.ClickListener;
 import com.example.databinding.model.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,5 +23,9 @@ public class MainActivity extends AppCompatActivity {
         user.setName("deepshikha");
         user.setEmail("deepshikha6464@gmail.com");
         binding.setUser(user);
+
+       ClickListener handle = new ClickListener(this);
+       binding.content.setHandle(handle);   // for all buttons i content_main
+       binding.setHandle(handle);       //for FAB
     }
 }

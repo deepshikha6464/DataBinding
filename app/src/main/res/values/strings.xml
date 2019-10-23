@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DataBinding</string>
+    <string name="buttonclick_with_param">ButtonClick with param</string>
 </resources>

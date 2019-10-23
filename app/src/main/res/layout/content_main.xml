@@ -4,6 +4,9 @@
         <variable
             name="user"
             type="com.example.databinding.model.User" />
+        <variable
+            name="handle"
+            type="com.example.databinding.handlers.ClickListener" />
     </data>
 
     <LinearLayout
@@ -25,6 +28,23 @@
             android:layout_height="wrap_content"
             android:text="@{user.email}"
             android:textSize="23sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ButtonClick"
+            android:onClick="@{handle::onButtonClick}"/>
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Button long press"-->
+<!--            android:onClick="@{handle::buttonLongPress}"/>-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonclick_with_param"
+            android:onClick ="@{(v)-> handle.buttonClickWithParam(v,user)}"/>
+
+
 
 
     </LinearLayout>
