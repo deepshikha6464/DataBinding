@@ -1,37 +1,37 @@
-package com.example.databinding.Model;
+package com.example.databinding.model;
 
 public class User {
-    String mName,mEmail;
+    String name , email;
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "mName='" + mName + '\'' +
-                ", mEmail='" + mEmail + '\'' +
-                '}';
-    }
-
-    public String getmName() {
-        return mName;
-    }
-
-    public void setmName(String mName) {
-        this.mName = mName;
-    }
-
-    public String getmEmail() {
-        return mEmail;
-    }
-
-    public void setmEmail(String mEmail) {
-        this.mEmail = mEmail;
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
 
     public User() {
     }
 
-    public User(String mName, String mEmail) {
-        this.mName = mName;
-        this.mEmail = mEmail;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
