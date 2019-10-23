@@ -44,6 +44,11 @@
             android:text="@string/buttonclick_with_param"
             android:onClick ="@{(v)-> handle.buttonClickWithParam(v,user)}"/>
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:profileImage="@{user.profileImage}" />
+
 
 
 
